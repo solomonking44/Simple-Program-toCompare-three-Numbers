@@ -2,19 +2,19 @@ def compare(a, b, c):
     if a == b == c:
         print(f"All numbers are equal therefore {a} is the largest")
     else:
-        if a > b and a != b:
-            if a > c and a != c:
+        if a > b:
+            if a > c:
                 print(f"{a} -> a is the largest")
-            elif c > a and c != a:
+            elif c > a:
                 print(f"{c} -> c is the largest")
             else:
                 print(f"{c} -> a and c are equal")
         else:
             if a == b:
                 print(f"{a} -> a and b are equal")      
-            elif b > c and b != c:
+            elif b > c:
                 print(f"{b} -> b is the largest")
-            elif c > b and c != b:
+            elif c > b:
                 print(f"{c} -> c is the largest")
             elif b==c:
                 print(f"{c} -> b and c are equal")
