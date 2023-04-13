@@ -8,16 +8,20 @@ def compare(a, b, c):
             elif c > a:
                 print(f"{c} -> c is the largest")
             else:
-                print(f"{c} -> a and c are equal")
+                print(f"{c} -> a and c are the largest")
         else:
             if a == b:
-                print(f"{a} -> a and b are equal")      
-            elif b > c:
-                print(f"{b} -> b is the largest")
-            elif c > b:
-                print(f"{c} -> c is the largest")
-            elif b==c:
-                print(f"{c} -> b and c are equal")
+                if a > c:
+                    print(f"{a} -> a & b are the largest")
+                else:
+                    print(f"{c} -> c is the largest")
+            else: 
+                if b > c:
+                    print(f"{b} -> b is the largest")
+                elif c > b:
+                    print(f"{c} -> c is the largest")
+                elif b==c:
+                    print(f"{c} -> b and c are the largest")
             
     
 
